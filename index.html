@@ -65,5 +65,29 @@ had the chance to begin. </p>
 <p>Email: sea.oeli@gmail.com</p>
 <p>Making a Change</p>
 </div>
+
+<script>
+    const revealElements = document.querySelectorAll(
+        '.card1, .sss9, .sss8, .sss4, .sss6'
+    );
+
+    revealElements.forEach(element => {
+        element.classList.add('reveal');
+    });
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.15
+    });
+
+    revealElements.forEach(element => observer.observe(element));
+</script>
+
 </body>
 </html>
