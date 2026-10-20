@@ -68,6 +68,31 @@ button a{
 }
 
 /*index.html*/
+.reveal {
+    opacity: 0;
+    transform: translateY(30px);
+    transition:
+        opacity 0.7s ease,
+        transform 0.7s ease;
+}
+
+.reveal.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Respect reduced-motion preferences */
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    html {
+        scroll-behavior: auto;
+    }
+}
 
 .sss {
     transform: translateY(-100px);
@@ -492,4 +517,5 @@ padding: 20px;
 .footer a:hover {
     color: #FFD700;
 }
+
 
