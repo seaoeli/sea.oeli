@@ -1,0 +1,495 @@
+
+/*general*/
+
+/*warning for incoming super messy code*/
+
+* {
+    box-sizing: border-box;
+}
+body{
+    margin:0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.box{
+    display: flex;   
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+/*nav*/
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 30px;
+    background-color: #004AAD;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    display: block;
+}
+
+.nav a{
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+.nav a:hover{
+    color: #FFD700;
+}
+
+/*button*/
+
+button {
+    padding: 13px 26px;
+    margin: 8px;
+    border: 2px solid #004AAD;
+    border-radius: 6px;
+    background-color: #004AAD;
+    color: white;
+    font-family: arial;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+button:hover {
+    background-color: #003580;
+}
+button a{
+    text-decoration: none;
+    font-size: 17px;
+    color: azure;
+}
+
+/*index.html*/
+
+.sss {
+    transform: translateY(-100px);
+    text-align: center;
+    padding:50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    width: 80%;
+    max-width: 1000px;
+}
+
+
+.sss-background {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sss h1 {
+    color: #2f3338;
+    font-size: clamp(32px, 4.5vw, 56px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin: 0 auto 24px;
+    max-width: 800px;
+}
+
+.sss h2{
+    font-size: 20px;
+    color: #555;
+    max-width: 650px;
+    margin: 0 auto 30px;
+}
+
+
+.sss9 {
+    background-color: #EAF1FC;
+    padding: 75px;
+    text-align: center;
+}
+
+.sss9 h1 {
+    color:#004AAD;
+    font-size: clamp(32px, 4vw, 46px);
+    margin: 0 0 30px;
+}
+
+.sss9 p {
+    color: black;
+    font-size: 18px;
+    line-height: 2.5;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+.sss9-grid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin: 0 auto 50px;
+}
+
+.sss9-item button {
+    padding: 0;
+    margin: 0 auto 35px;
+    border: 2px solid #004AAD;
+    border-radius: 6px;
+    background-color: #004AAD;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.sss9-item a {
+    display: block;
+    padding: 15px 28px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sss9-item button:hover {
+    background-color:#006AAD;
+    border-color:#006AAD;
+    transform: translateY(-2px);
+}
+
+.sss9-item:nth-child(2) button {
+    background-color: white;
+    border-color: #004AAD;
+}
+
+.sss9-item:nth-child(2) a {
+    color: #004AAD;
+}
+
+.sss9-item:nth-child(2) button:hover {
+    background-color: #D6E5FF;
+}
+
+.card1 {
+    width: 100%;
+    margin: 0;
+    padding: 80px max(8%, calc((100% - 1000px) / 2));
+    box-sizing: border-box;
+
+    background-color: #F5F1E8;
+    border-radius: 0;
+    text-align: left;
+}
+
+.card1 h1 {
+    color: #004AAD;
+    font-size: clamp(30px, 4vw, 44px);
+    line-height: 1.2;
+    margin: 0 0 24px;
+}
+
+.card1 p {
+    max-width: 760px;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #3F4650;
+    margin: 0 0 28px;
+}
+
+
+/*aboutus.html*/
+
+.sss2 {
+    transform: translateY(-50px);
+    text-align: center;
+    padding:20px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 20px;
+    width: 80%;
+    max-width: 600px;
+}
+
+.sss-background2 {
+    width: 100%;
+    min-height: 50vh;
+    background-image: url("images/background2.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card2 {
+    width: 80%;
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 25px 30px;
+    box-sizing: border-box;
+
+    background-color: #F5F1E8;
+    border-radius: 4px;
+    border-left: 5px solid #004AAD;
+
+    text-align: left;
+    font-size: 17px;
+    line-height: 1.9;
+    color: #343B44;
+}
+
+.card2 h2 {
+    color: #004AAD;
+    font-size: 28px;
+    line-height: 1.3;
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
+
+/*students.html and volunteers.html*/
+/*header*/
+.sss3 {
+    text-align: center;
+    padding: 90px 24px;
+    background-color: #EEF4FF;
+
+}
+.sss3 h1 { 
+    max-width: 750px;
+    margin: 20px auto;
+    color: #004AAD;
+    font-size: clamp(36px, 5vw, 58px);
+    line-height: 1.15;
+}
+
+.sss3 h4{
+    color: #555;
+    font-size: 20px;
+}
+
+/*cards*/
+
+.sss4{
+    background-color: rgb(224, 224, 210);
+
+}
+
+.sss4 h1{
+color: #003580;
+text-align: center;
+padding: 20px;
+}
+
+.sss4-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    max-width: 1000px;
+    margin: 0 auto 50px;
+}
+
+.sss4-card {
+    background-color: #EEF4FF;
+    padding: 30px;
+    border-radius: 16px;
+    border: 1px solid #DCE7FA;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.sss4-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 24px rgba(0, 74, 173, 0.12);
+}
+
+.sss4-card h3 {
+    color: #004AAD;
+    font-size: 21px;
+    margin: 8px 0 12px;
+}
+
+.sss4-card p {
+    color: #4B5563;
+    font-size: 16px;
+    line-height: 1.7;
+    margin: 0;
+}
+/* students.html*/
+
+.sss8 {
+    background-color: #F5F1E8;
+    padding: 75px 8%;
+}
+
+.sss8 > h1 {
+    color: #004AAD;
+    font-size: clamp(32px, 4vw, 44px);
+    text-align: center;
+    margin: 0 0 18px;
+}
+
+.sss8 > p {
+    max-width: 680px;
+    margin: 0 auto 40px;
+    text-align: center;
+    color: #505968;
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.sss8-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.sss8-card {
+    background-color: #FFFFFF;
+    padding: 32px;
+    border: 1px solid #E0E5EC;
+    border-radius: 10px;
+    border-top: 4px solid #004AAD;
+
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.sss8-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 40, 100, 0.10);
+}
+
+.sss8-card h3 {
+    color: #004AAD;
+    font-size: 23px;
+    margin: 0 0 14px;
+}
+
+.sss8-card p {
+    color: #505968;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0;
+}
+/*volunteer.html*/
+
+
+.sss6 {
+    padding: 30px;
+    padding-bottom: 60px;
+    background-color: #eef3f7;
+    text-align: center;
+}
+
+.sss6 h1 {
+    color: #004AAD;
+    font-size: 32px;
+    margin-bottom: 24px;
+}
+
+.sss6 p {
+    max-width: 850px;
+    margin: 0 auto;
+    color: #000000;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+
+/*contact us.html*/
+
+.sss7 {
+    padding: 60px;
+    background-color:#e6f3ff;
+}
+
+.sss7 h1 {
+    color: #484c50;
+    font-size: clamp(32px, 4.5vw, 56px);
+    line-height: 1.15;
+    letter-spacing: -1px;
+    margin: 0 auto 24px;
+    max-width: 800px;
+    text-align: center;
+
+}
+
+.sss7 p{
+
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: center;
+    font-size: 18px;
+    color: #2f3338;
+    line-height: 1.6;
+
+}
+.faq-list {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding:35px;
+}
+
+.faq-item {
+    width: 1000px;
+    overflow-y: auto;
+    padding: 20px;
+    margin-bottom: 15px;
+    border: 1px solid #DCE7FA;
+    border-radius: 10px;
+    background-color: #EEF4FF;
+    box-sizing: border-box;
+}
+
+.faq-item summary {
+    color: #004AAD;
+    font-weight: 600;
+    cursor: pointer;
+    line-height: 1.6;
+    width: 100%;
+    box-sizing: border-box;
+    flex-shrink: 0;
+}
+
+.faq-item p {
+    color: #4B5563;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/*footer*/
+
+.footer {
+    background-color: #004AAD;
+    color: white;
+    padding: 40px 7% 25px;
+    font-size: 15px;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.footer p {
+    margin: 8px 0;
+}
+
+.footer a {
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: color 0.2s ease;
+}
+
+.footer a:hover {
+    color: #FFD700;
+}
+
